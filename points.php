@@ -61,7 +61,7 @@
             </select>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary mt-2">Sign in</button>
+        <button type="submit" class="btn btn-primary mt-2">Enviar curso</button>
       </form>
       </div>
     </section>
