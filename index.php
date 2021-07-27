@@ -19,12 +19,12 @@
           <p>Become an Innermost VIP to earn points for things like placing orders and following us on social media. We'll give you 250 points just for joining... so you might as well.
 
             The best part? Refer a friend and we’ll give you 1,000 points (that's enough for £5 off your next order) and your friend gets a straight £5 off their first order. What's the catch? Nada.
-
+s
             Only available to our UK customers.</p>
             <button class="btn btn-primary">Log In</button>
         </div>
         <div class="col-6">
-          <img src="img/loyalty.svg" alt="" class="img-thumbnail">
+          <img src="./img/loyalty.svg" alt="" class="img-thumbnail">
         </div>
       </div>
     </section>
