@@ -22,8 +22,8 @@
   echo "</table>";
 
 ?>
-
+<!--
 
 Que usuario / 5
 
-UPDATE puntosUsuarios WHERE UserId = 5 SET userPuntos = PuntosUsuario + 300 puntos
+UPDATE puntosUsuarios WHERE UserId = 5 SET userPuntos = PuntosUsuario + 300 puntos -->

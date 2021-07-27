@@ -33,6 +33,39 @@
       </div>
     </section>
 
+    <section>
+      <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputApellido">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su apellido">
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmpresa">Empresa</label>
+          <input type="text" class="form-control" id="inputEmpresa" placeholder="Ingrese su empresa">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCurso">Curso terminado</label>
+            <select id="inputCurso" class="form-control">
+              <option selected>Eliga el curso que termino</option>
+              <option value="1">Curos 1</option>
+              <option value="2">Curos 1</option>
+              <option value="3">Curos 1</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Sign in</button>
+      </form>
+      </div>
+    </section>
+
   </main>
 
 
