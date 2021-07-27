@@ -1,5 +1,5 @@
 <div class="container">
-  <form method="post" id="login">
+  <form method="post" id="login" action="php/login.php">
     <div class="form-group">
       <label for="exampleInputEmail1">Correo Electronico</label>
       <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">

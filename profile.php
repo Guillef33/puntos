@@ -10,7 +10,9 @@
 <body>
 
 <?php include_once("nav.html"); ?>
-
+<?php 
+session_start();
+ ?>
   <main>
     <section>
       <div class="container rounded bg-white mt-5 mb-5">
@@ -18,10 +20,10 @@
             <div class="col-md-3 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                   <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-                  <span class="font-weight-bold">Edogaru</span>
-                  <span class="text-black-50">edogaru@mail.com.my</span>
+                  <span class="font-weight-bold"><?php echo $_SESSION["name"]; ?></span>
+                  <span class="text-black-50"><?php echo $_SESSION["email"]; ?></span>
                   <span>Puntos Conseguidos</span>
-                  <span><?php echo $puntosUsuario['puntos'] ?></span> <!-- agregar aca los puntos de usuario -->
+                  <span></span> <!-- agregar aca los puntos de usuario -->
                   <a href="points.php" class="btn btn-primary">Canjear Puntos</a>
                   <span>Level 1</span>
                   <a href="points.php" class="btn btn-primary">Puntos Historia</a>
