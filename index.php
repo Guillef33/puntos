@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Loyalty Program</title>
+  <title>Programa de Puntos Para Empresas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -15,12 +15,11 @@
     <section class="container">
       <div class="row align-items-center"">
         <div class="col-6">
-          <h1>Rewards</h1>
-          <p>Become an Innermost VIP to earn points for things like placing orders and following us on social media. We'll give you 250 points just for joining... so you might as well.
-
-            The best part? Refer a friend and we’ll give you 1,000 points (that's enough for £5 off your next order) and your friend gets a straight £5 off their first order. What's the catch? Nada.
-s
-            Only available to our UK customers.</p>
+          <h1>Premia a tus empleados</h1>
+          <p>Genera fidelizacion y mejora el clima laboral de tu empresa.
+            El programa TusPuntos es muy sencillo.
+            Registrate, carga tus datos y empeza a ganar.
+          </p>
             <button class="btn btn-primary">Log In</button>
         </div>
         <div class="col-6">
@@ -29,7 +28,7 @@ s
       </div>
     </section>
 
-    <section class="container">
+    <!-- <section class="container">
       <div class="row m-5">
         <div class="d-flex justify-content-center">
           <h2>Earn it</h2>
@@ -62,7 +61,7 @@ s
         </div>
       </div>
 
-    </section>
+    </section> -->
 
 
 

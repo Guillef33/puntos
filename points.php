@@ -12,7 +12,7 @@
 <?php include_once("nav.html"); ?>
 
   <main>
-    <section class="container">
+    <!-- <section class="container">
       <div class="row align-items-center"">
         <div class="col-12">
           <div>
@@ -24,14 +24,14 @@
               <th>password</th>
               <th>descripcion</th>
               </tr>";
-            <?php
+            <//?php
                 include("php/puntosBase.php");
             ?>
             </table>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <div class="container">
@@ -55,9 +55,9 @@
             <label for="inputCurso">Curso terminado</label>
             <select id="inputCurso" class="form-control">
               <option selected>Eliga el curso que termino</option>
-              <option value="1">Curos 1</option>
-              <option value="2">Curos 1</option>
-              <option value="3">Curos 1</option>
+              <option value="1">Curso 1</option>
+              <option value="2">Curso 2</option>
+              <option value="3">Curso 3</option>
             </select>
           </div>
         </div>

@@ -11,6 +11,7 @@
 <body>
 
 <?php include_once("nav.html"); ?>
+<?php include_once("php/puntosBase.php"); ?>
 
   <main>
     <section class="container" id="grilla-catalogo">
@@ -18,25 +19,28 @@
       <div class="card">
         <img src="img/nike-air.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Zapatillas Nike Pro</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h4 class="precioPuntos">5.600</h4>
+          <button class="btn btn-primary">Canjear</button>
         </div>
       </div>
       <div class="card">
         <img src="img/nike-air.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Termo Stanley</h5>
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h4 class="precioPuntos">7.600</h4>
+          <button class="btn btn-primary">Canjear</button>
         </div>
       </div>
       <div class="card">
         <img src="img/nike-air.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title"><?php echo $_SESSION["nombre"]; ?></h5>
+          <p class="card-text"><?php echo $_SESSION["descripcion"]; ?></p>
+          <h4 class="precioPuntos"><?php echo $_SESSION["precio"]; ?></h4>
+          <button class="btn btn-primary">Canjear</button>
         </div>
       </div>
 </div>

@@ -17,6 +17,8 @@
     echo "<td>" . $tabla['categoria'] . "</td>";
     echo "<td>" . $tabla['puntos'] . "</td>";
     echo "<td>" . $tabla['descripcion'] . "</td>";
+    echo "<td>" . $tabla['precio'] . "</td>";
+
     echo "</tr>";
 	}
   echo "</table>";
