@@ -25,7 +25,7 @@
               <th>descripcion</th>
               </tr>";
             <?php
-                include("puntosBase.php");
+                include("php/puntosBase.php");
             ?>
             </table>
           </div>
@@ -35,7 +35,7 @@
 
     <section>
       <div class="container">
-      <form>
+      <form action="php/puntosBase.php">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputNombre">Nombre</label>

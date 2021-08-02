@@ -1,7 +1,7 @@
 <?php
 
 //	$idProvincia = $_GET["idProvincia"];
-	$conn = new PDO ("mysql:host=localhost;dbname=customer-loyalty","root","");
+	$conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
 	$sentenciaPuntos = $conn->prepare("SELECT * FROM puntos");
   //	$sentencia->bindParam(":idProvincia",$idProvincia,PDO::PARAM_INT);
 

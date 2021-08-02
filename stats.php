@@ -31,7 +31,7 @@
             <th>password</th>
             </tr>";
           <?php
-              include("conexion.php");
+              include("php/conexion.php");
           ?>
           </table>
         </div>

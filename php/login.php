@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once("conexion.php");
 $email = $_POST["email"];
 $password = $_POST["password"];
@@ -31,7 +31,7 @@ Variables session guardan los datos del usuario en el servidor de tal manera que
 session_start();
 $_SESSION["idUsuario"] = 1;
 
-Esta variable iniciada , existira por largos dias, dependiendo de la configuracion del servidor APACHE, podemos hacer que dure 2 semanas, 1 semana, 1 mes o eternamente. 
+Esta variable iniciada , existira por largos dias, dependiendo de la configuracion del servidor APACHE, podemos hacer que dure 2 semanas, 1 semana, 1 mes o eternamente.
 
 
 */

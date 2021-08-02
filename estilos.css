@@ -1,0 +1,9 @@
+#grilla-catalogo {
+  margin-top: 2rem;
+}
+
+#grilla-catalogo  .card {
+  margin-right: 3rem;
+  border: 1px solid gray;
+  padding: 3rem;
+}
