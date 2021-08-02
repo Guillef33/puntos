@@ -11,12 +11,10 @@
 </head>
 <body>
 
-<?php include_once("nav.html"); ?>
+<?php include_once("nav.php"); ?>
 
 
   <main>
-
-<?php include_once("nav.html"); ?>
 
 <main>
   <section class="container">

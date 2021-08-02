@@ -9,10 +9,10 @@
 </head>
 <body>
 
-<?php include_once("nav.html"); ?>
+<?php include_once("nav.php"); ?>
 
-<?php
-session_start();
+<?php 
+    require_once("php/puntajeUsuario.php");
  ?>
   <main>
     <section>

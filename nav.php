@@ -9,9 +9,13 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php">Inicio</a>
         </li>
+        <?php 
+        session_start();
+        if (isset($_SESSION['idUsuario'])): ?>
         <li class="nav-item">
           <a class="nav-link" href="profile.php">Mi Perfil</a>
         </li>
+        <?php endif ?>
         <li class="nav-item">
           <a class="nav-link" href="stats.php" tabindex="-1" aria-disabled="true">Ranking</a>
         </li>
