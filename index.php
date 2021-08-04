@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php include_once("nav.html"); ?>
+<?php include_once("nav.php"); ?>
 
   <main>
     <section class="container">
