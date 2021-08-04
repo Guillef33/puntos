@@ -1,3 +1,9 @@
+main {
+  background-image: url(img/wickedbackground.svg);
+  background-size: cover;
+  height: 80vh;
+}
+
 #grilla-catalogo {
   margin-top: 2rem;
 }
