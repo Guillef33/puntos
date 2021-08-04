@@ -7,3 +7,14 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 3rem;
 }
+
+.imageBackground {
+  background-image: url(img/Captura14-247x247.jpg);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.seccionLogin {
+  height: 600px;
+}

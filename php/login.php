@@ -16,7 +16,7 @@ if ($sql->execute()) {
 		$_SESSION["idUsuario"]= $resultado["idUsuario"];
 		$_SESSION["name"] = $resultado["name"];
 		$_SESSION["email"] = $resultado["email"];
-		header("location:../index.php");
+		header("location:../welcome.php");
 	}
 	else{
 		header("location:../login.php");
