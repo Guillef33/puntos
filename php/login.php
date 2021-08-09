@@ -13,8 +13,8 @@ if ($sql->execute()) {
 	$resultado = $sql->fetch();
 	if ($resultado == true) {
 		session_start();
-		$_SESSION["idUsuario"]= $resultado["idUsuario"];
-		$_SESSION["name"] = $resultado["name"];
+		$_SESSION["idUsuarios"]= $resultado["idUsuarios"];
+		$_SESSION["nombre"] = $resultado["nombre"];
 		$_SESSION["email"] = $resultado["email"];
 		header("location:../index.php");
 	}

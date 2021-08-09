@@ -12,11 +12,11 @@
 	$tabla = "<h2>Mostrar datos</h2>";
 
   foreach ($resultado as $key => $tabla) {
-		echo "<tr>";
-    echo "<td>" . $tabla['name'] . "</td>";
+		/*echo "<tr>";
+    echo "<td>" . $tabla['nombre'] . "</td>";
     echo "<td>" . $tabla['email'] . "</td>";
     echo "<td>" . $tabla['password'] . "</td>";
-    echo "</tr>";
+    echo "</tr>";*/
 	}
   echo "</table>";
 

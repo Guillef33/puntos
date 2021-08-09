@@ -24,6 +24,11 @@
                   <span class="font-weight-bold"><?php echo $_SESSION["name"]; ?></span>
                   <span class="text-black-50"><?php echo $_SESSION["email"]; ?></span>
                   <span>Puntos Conseguidos</span>
+                  <?php 
+                  require_once("php/traerPuntajes.php");
+
+                    ?>
+                  <p style="font-weight: bold;"><?php echo $resultado["puntos"] ?></p>
                   <span></span> <!-- agregar aca los puntos de usuario -->
                   <a href="points.php" class="btn btn-primary">Canjear Puntos</a>
                   <span>Level 1</span>

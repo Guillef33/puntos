@@ -11,7 +11,7 @@
         </li>
         <?php 
         session_start();
-        if (isset($_SESSION['idUsuario'])): ?>
+        if (isset($_SESSION['idUsuarios'])): ?>
         <li class="nav-item">
           <a class="nav-link" href="profile.php">Mi Perfil</a>
         </li>
