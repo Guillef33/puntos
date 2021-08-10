@@ -13,6 +13,11 @@
 
 <?php 
     require_once("php/puntajeUsuario.php");
+ 
+
+ var_dump($sentencia1);
+ var_dump($resultado);
+ var_dump($resultado['puntos']);
  ?>
   <main>
     <section>
@@ -21,13 +26,13 @@
             <div class="col-md-3 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3">
                   <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-                  <span class="font-weight-bold"><?php echo $_SESSION["name"]; ?></span>
+                  <span class="font-weight-bold"><?php echo $_SESSION["nombre"]; ?></span>
                   <span class="text-black-50"><?php echo $_SESSION["email"]; ?></span>
                   <span>Puntos Conseguidos</span>
-                  <?php 
+                  <!-- <?php 
                   require_once("php/traerPuntajes.php");
+                    ?> -->
 
-                    ?>
                   <p style="font-weight: bold;"><?php echo $resultado["puntos"] ?></p>
                   <span></span> <!-- agregar aca los puntos de usuario -->
                   <a href="points.php" class="btn btn-primary">Canjear Puntos</a>

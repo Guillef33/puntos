@@ -11,17 +11,22 @@
 <body>
 
 <?php include_once("nav.php"); ?>
+<!--  -->
 
   <main>
-    <section class="container" id="welcome-section">
+    <section class="container">
       <div class="row align-items-center"">
         <div class="col-6">
-          <h1>Premia a tus empleados</h1>
+          <h1>Bienvenido, <?php echo $_SESSION["nombre"]; ?></h1>
           <p>Genera fidelizacion y mejora el clima laboral de tu empresa.
             El programa TusPuntos es muy sencillo.
             Registrate, carga tus datos y empeza a ganar.
           </p>
-            <a class="btn btn-primary" href="php/login.php"> Log In</a>
+                      <!-- <?php 
+                  require_once("php/traerPuntajes.php");
+                  ?> -->
+          <p>Hoy tus puntos son:<span style="font-weight: 700;"><?php echo $resultado["puntos"] ?> </span></p>
+
         </div>
         <div class="col-6">
           <img src="./img/loyalty.svg" alt="" class="img-thumbnail">
