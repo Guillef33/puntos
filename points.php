@@ -11,9 +11,7 @@
 
 <?php include_once("nav.php"); ?>
 
-<?php
-  include("php/conexion.php");
-  ?>
+
 
 
 

@@ -15,9 +15,9 @@
     require_once("php/puntajeUsuario.php");
  
 
- var_dump($sentencia1);
- var_dump($resultado);
- var_dump($resultado['puntos']);
+//  var_dump($sentencia1);
+//  var_dump($resultado);
+//  var_dump($resultado['puntos']);
  ?>
   <main>
     <section>

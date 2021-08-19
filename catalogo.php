@@ -11,7 +11,7 @@
 <body>
 
 <?php include_once("nav.php"); ?>
-<?php include_once("php/puntosBase.php"); ?>
+<? // php include_once("php/puntosBase.php"); ?>
 
   <main>
     <section class="container" id="grilla-catalogo">
