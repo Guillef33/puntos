@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
+<?php 
+    require_once("php/logged.php");
+ ?>
 <?php include_once("nav.php"); ?>
 <? // php include_once("php/puntosBase.php"); ?>
 

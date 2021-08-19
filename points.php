@@ -9,10 +9,10 @@
 </head>
 <body>
 
+<?php 
+    require_once("php/logged.php");
+ ?>
 <?php include_once("nav.php"); ?>
-
-
-
 
 
   <main>
