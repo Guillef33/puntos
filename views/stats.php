@@ -1,10 +1,4 @@
-<?php 
-    require_once("php/logged.php");
- ?>
-<?php include_once("nav.php"); ?>
-
-
-  <main>
+<?php include_once("../nav.php"); ?>
 
 <main>
   <section class="container">
@@ -22,17 +16,12 @@
 -->
           <table class="table">
             <tr>
-            <th>ID Usuario</th>
-            <th>ID Puntos</th>
             <th>Nombre</th>
             <th>Puntos Conseguidos</th>
             </tr> 
         <?php 
-          require_once("php/traerPuntajesUsuarios.php");
-          foreach ($resultado as $key => $tabla) {
+          foreach ($puntajeUsuarios as $key => $tabla) {
               echo "<tr>";
-            echo "<td>" . $tabla['idPuntos'] . "</td>";
-            echo "<td>" . $tabla['idUsuarios'] . "</td>";
             echo "<td>" . $tabla['nombre'] . "</td>";
             echo "<td>" . $tabla['puntos'] . "</td>";
             echo "</tr>";   
@@ -59,7 +48,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <?php include_once("footer.php"); ?>
+  <?php include_once("../footer.php"); ?>
 
 </body>
 </html>
