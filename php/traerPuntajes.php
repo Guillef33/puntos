@@ -4,6 +4,6 @@
 	$sentencia->bindParam(":idUsuarios",$_SESSION['idUsuarios'],PDO::PARAM_INT);
 	$sentencia->execute();
 	$resultado = $sentencia->fetch();
-
+ 
  
  ?>
