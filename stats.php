@@ -22,6 +22,15 @@
               include("php/conexion.php");
           ?>
           </table>
+          
+        <!-- <?php 
+          require_once("php/traerPuntajes.php");
+          ?> -->
+            <p>Hoy tus puntos son:<span style="font-weight: 700;"><?php echo $resultado["puntos"] ?> </span></p>
+  
+
+
+
         </div>
       </div>
     </div>
