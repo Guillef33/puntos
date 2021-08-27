@@ -8,10 +8,10 @@
 
 <main>
   <section class="container">
+  <h2>Ranking de los mejores alumnos</h2>
     <div class="row align-items-center"">
       <div class="col-12">
         <div>
-          <h2>Usuarios:</h2>
           <table class="table">
             <tr>
             <th>name</th>
@@ -25,26 +25,20 @@
 
           <table class="table">
             <tr>
-            <th>name</th>
-            <th>email</th>
-            <th>password</th>
+            <th>ID Usuario</th>
+            <th>ID Puntos</th>
+            <th>Puntos Conseguidos</th>
             </tr>";
         <?php 
           require_once("php/traerPuntajes.php");
 
-          $tabla = "<h2>Mostrar datos</h2>";
-
-          //var_dump($tabla);
-
           foreach ($resultado as $key => $tabla) {
-            echo "<tr>";
-            echo "<td>" . $tabla['nombre'] . "</td>";
-            echo "<td>" . $tabla['email'] . "</td>";
-            echo "<td>" . $tabla['password'] . "</td>";
-            echo "<td>" . $resultado['puntos'] . "</td>";
-
+              echo "<tr>";
+            echo "<td>" . $tabla['idPuntos'] . "</td>";
+            echo "<td>" . $tabla['idUsuarios'] . "</td>";
+            echo "<td>" . $tabla['puntos'] . "</td>";
             echo "</tr>";   
-          }
+            }
           echo "</table>";
           ?>
 
