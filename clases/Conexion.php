@@ -20,21 +20,7 @@ class Conexion
 
     }
 
-    public function seleccionarUsuarios () 
-    {
-        
-    $conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
-    return $conn;
-
-    $sqlUsuarios = "SELECT * FROM usuarios";
-
-	$sentencia = $conn->prepare($sqlUsuarios);
-
-	$sentencia->execute();
-
-	$resultado = $sentencia->fetchAll();
-
-    }
+ 
 
 }
 

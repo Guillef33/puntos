@@ -1,4 +1,4 @@
-
+<?php include ('index.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
       <a class="navbar-brand" href="index.php">TusPuntos</a>
     <?php endif; ?>
 
-    <?php require_once("php/traerPuntajesUsuarios.php"); ?>
+    <?php // require_once("php/traerPuntajesUsuarios.php"); ?>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

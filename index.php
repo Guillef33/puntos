@@ -1,8 +1,11 @@
 <?php 
-  require ('clases/Conexion.php');
-  include_once("nav.php"); 
-
+  require_once ('clases/Conexion.php');  
+  require_once ('clases/Puntos.php');
+  require_once ('clases/Usuario.php');
+  include_once("nav.php");
 ?>
+
+
 
   <main>
     <section class="container">

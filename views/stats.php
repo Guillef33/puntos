@@ -1,4 +1,10 @@
-<?php include_once("../nav.php"); ?>
+<?php 
+  include_once("../nav.php"); 
+  require("../index.php");
+
+?>
+
+
 
 <main>
   <section class="container">
@@ -6,14 +12,6 @@
     <div class="row align-items-center">
       <div class="col-12">
         <div>
-          <!-- <table class="table">
-            <tr>
-            <th>name</th>
-            <th>email</th>
-            <th>password</th>
-            </tr>";
-          </table>
--->
           <table class="table">
             <tr>
             <th>Nombre</th>
