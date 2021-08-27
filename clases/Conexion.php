@@ -18,6 +18,14 @@ class Conexion
     $conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
     return $conn;
 
+    }
+
+    public function seleccionarUsuarios () 
+    {
+        
+    $conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
+    return $conn;
+
     $sqlUsuarios = "SELECT * FROM usuarios";
 
 	$sentencia = $conn->prepare($sqlUsuarios);
