@@ -22,10 +22,32 @@
               include("php/conexion.php");
           ?>
           </table>
-          
-        <!-- <?php 
+
+          <table class="table">
+            <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+            </tr>";
+        <?php 
           require_once("php/traerPuntajes.php");
-          ?> -->
+
+          $tabla = "<h2>Mostrar datos</h2>";
+
+          //var_dump($tabla);
+
+          foreach ($resultado as $key => $tabla) {
+            echo "<tr>";
+            echo "<td>" . $tabla['nombre'] . "</td>";
+            echo "<td>" . $tabla['email'] . "</td>";
+            echo "<td>" . $tabla['password'] . "</td>";
+            echo "<td>" . $resultado['puntos'] . "</td>";
+
+            echo "</tr>";   
+          }
+          echo "</table>";
+          ?>
+
             <p>Hoy tus puntos son:<span style="font-weight: 700;"><?php echo $resultado["puntos"] ?> </span></p>
   
 
