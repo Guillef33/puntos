@@ -12,23 +12,20 @@
     <div class="row align-items-center"">
       <div class="col-12">
         <div>
-          <table class="table">
+          <!-- <table class="table">
             <tr>
             <th>name</th>
             <th>email</th>
             <th>password</th>
             </tr>";
-          <?php
-              include("php/conexion.php");
-          ?>
           </table>
-
+-->
           <table class="table">
             <tr>
             <th>ID Usuario</th>
             <th>ID Puntos</th>
             <th>Puntos Conseguidos</th>
-            </tr>";
+            </tr>"; 
         <?php 
           require_once("php/traerPuntajes.php");
 
@@ -36,6 +33,7 @@
               echo "<tr>";
             echo "<td>" . $tabla['idPuntos'] . "</td>";
             echo "<td>" . $tabla['idUsuarios'] . "</td>";
+            echo "<td>" . $tabla['nombreUsuario'] . "</td>";
             echo "<td>" . $tabla['puntos'] . "</td>";
             echo "</tr>";   
             }

@@ -1,6 +1,8 @@
-<?php require 'clases/Conexion.php';?>
+<?php 
+  require ('clases/Conexion.php');
+  include_once("nav.php"); 
 
-<?php include_once("nav.php"); ?>
+?>
 
   <main>
     <section class="container">
@@ -19,40 +21,6 @@
       </div>
     </section>
 
-    <!-- <section class="container">
-      <div class="row m-5">
-        <div class="d-flex justify-content-center">
-          <h2>Earn it</h2>
-        </div>
-      </div>
-      <div class="row" >
-        <div class="col-3 text-center">
-          <img src="img/gbp_x100.jpg" alt="">
-          <h3>5 point</h3>
-          <p>Spend £1</p>
-          <p>Online</p>
-        </div>
-        <div class="col-3 text-center">
-          <img src="img/facebook_x100.jpg" alt="">
-          <h3>5 point</h3>
-          <p>Spend £1</p>
-          <p>Online</p>
-        </div>
-        <div class="col-3 text-center">
-          <img src="img/insta_x100.jpg" alt="">
-          <h3>5 point</h3>
-          <p>Spend £1</p>
-          <p>Online</p>
-        </div>
-        <div class="col-3 text-center">
-          <img src="img/twitter_x100.jpg" alt="">
-          <h3>5 point</h3>
-          <p>Spend £1</p>
-          <p>Online</p>
-        </div>
-      </div>
-
-    </section> -->
 
 
 
