@@ -1,6 +1,6 @@
 <?php 
   include_once("../nav.php"); 
-  require("../index.php");
+  // require("../index.php");
 
 ?>
 

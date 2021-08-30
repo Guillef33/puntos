@@ -23,6 +23,16 @@ class Puntos extends Conexion
 
     }
 
+    // Probando
+    public function sumarPuntosAUsuario () {
+
+        $conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
+        $sentencia = $conn->prepare("INSERT INTO  puntos INNER JOIN puntosUsuario ON puntos.idUsuarios = puntosUsuario.idUsuarios");
+        $sentencia->execute();
+        $puntajeUsuarios = $sentencia->fetchAll();
+    
+        }
+
 }
 
 
