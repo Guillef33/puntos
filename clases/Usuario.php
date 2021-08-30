@@ -3,22 +3,13 @@
 class Usuario extends Conexion
 
 {
-
-    private static $conn;
-
-    private function __construct()
-    // impedimos instanciar la clase
-    {
-        
-    }
-
-    public function logIn()
+    public static function logIn()
     {
         $email = $_POST["email"];
         $password = $_POST["password"];
-        $conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
+    
         
-        $sql = $conn->prepare("SELECT * FROM usuarios WHERE email = :email AND password = :password");
+        $sql = Conexion::conectar()->prepare("SELECT * FROM usuarios WHERE email = :email AND password = :password");
         $sql->bindParam(":email",$email,PDO::PARAM_STR);
         $sql->bindParam(":password",$password,PDO::PARAM_STR);
         
@@ -29,10 +20,10 @@ class Usuario extends Conexion
                 $_SESSION["idUsuarios"]= $resultado["idUsuarios"];
                 $_SESSION["nombre"] = $resultado["nombre"];
                 $_SESSION["email"] = $resultado["email"];
-                header("location:../welcome.php");
+                header("location:welcome.php");
             }
             else{
-                header("location:../login.php");
+                header("location:login.php");
         
             }
         }

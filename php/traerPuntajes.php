@@ -5,5 +5,4 @@
 	$sentencia->execute();
 	$resultado = $sentencia->fetch();
  
- 
  ?>

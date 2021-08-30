@@ -1,31 +1,11 @@
 <?php 
-    require_once("php/logged.php");
- ?>
-<?php include_once("nav.php"); ?>
+        require_once("php/logged.php");
+        require_once('inicio.php');
+        include_once("nav.php"); 
+?>
 
 
   <main>
-    <!-- <section class="container">
-      <div class="row align-items-center"">
-        <div class="col-12">
-          <div>
-            <h2>Tabla de puntos y categorias:</h2>
-            <table class="table">
-              <tr>
-              <th>name</th>
-              <th>email</th>
-              <th>password</th>
-              <th>descripcion</th>
-              </tr>";
-            <//?php
-                include("php/puntosBase.php");
-            ?>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section>
       <div class="container">
       <form action="php/puntosBase.php">

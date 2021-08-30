@@ -1,15 +1,12 @@
 <?php 
-    require_once("php/logged.php");
- ?>
-<?php include_once("nav.php"); ?>
+      require_once("php/logged.php");
+      require_once('inicio.php');
+      include_once("nav.php"); 
+      $resultado = Puntos::puntajeUsuarios();
+      $resultado = Puntos::traerPuntajes();
 
-<?php 
-    require_once("php/puntajeUsuario.php");
+?>
 
-//  var_dump($sentencia1);
-//  var_dump($resultado);
-//  var_dump($resultado['puntos']);
- ?>
   <main>
     <section>
       <div class="container rounded bg-white mt-5 mb-5">
@@ -20,9 +17,6 @@
                   <span class="font-weight-bold"><?php echo $_SESSION["nombre"]; ?></span>
                   <span class="text-black-50"><?php echo $_SESSION["email"]; ?></span>
                   <span>Puntos Conseguidos</span>
-                  <!-- <?php 
-                  require_once("php/traerPuntajes.php");
-                    ?> -->
 
                   <p style="font-weight: bold;"><?php echo $resultado["puntos"] ?></p>
                   <span></span> <!-- agregar aca los puntos de usuario -->

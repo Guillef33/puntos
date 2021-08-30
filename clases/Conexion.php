@@ -4,7 +4,7 @@ class Conexion
 
 {
 
-    private static $conn;
+    // private static $conn;
 
     private function __construct()
     // impedimos instanciar la clase

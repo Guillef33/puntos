@@ -1,7 +1,9 @@
 <?php 
+    require_once ('inicio.php');
     require_once("php/logged.php");
-    require_once("php/traerPuntajes.php");
+    // require_once("php/traerPuntajes.php");
     include_once("nav.php");
+    $resultado = Puntos::traerPuntajes();
 
 ?>
 

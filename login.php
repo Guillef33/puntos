@@ -1,9 +1,12 @@
-<?php include_once("nav.php"); ?>
+<?php 
+require_once("inicio.php");
+include_once("nav.php"); 
+?>
 
 <div class="container">
   <div class="row seccionLogin">
     <div class="col-6 d-flex align-items-center"">
-      <form method="post" id="login" action="php/login.php">
+      <form method="post" id="login">
         <div class="form-group">
           <label for="exampleInputEmail1">Correo Electronico</label>
           <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
@@ -17,9 +20,14 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div> -->
-        <button type="submit" class="btn btn-primary">Ingresar</button>
+        <button type="submit" name="submit" class="btn btn-primary">Ingresar</button>
         <a type="text" class="btn btn-primary" href="registro.php">Registrarse</a>
       </form>
+      <?php 
+        if(isset($_POST["submit"])){
+          $a = Usuario::logIn();
+        }
+      ?>
     </div>
     <div class="col-6 imageBackground">
       
