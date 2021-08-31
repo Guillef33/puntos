@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programa de Puntos Para Empresas</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="addtoCart.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -15,7 +17,7 @@
 
 
     <?php if (isset($_SESSION['idUsuarios'])): ?>
-      <a class="navbar-brand" href="welcome.php">TusPuntos</a>
+      <a class="navbar-brand" href="views/welcome.php">TusPuntos</a>
       <?php else: ?>
       <a class="navbar-brand" href="index.php">TusPuntos</a>
     <?php endif; ?>
@@ -36,7 +38,7 @@
           <a class="nav-link" href="stats.php" tabindex="-1" aria-disabled="true">Ranking</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="catalogo.php" tabindex="-1" aria-disabled="true">Premios</a>
+          <a class="nav-link" href="tienda.php" tabindex="-1" aria-disabled="true">Premios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="points.php" tabindex="-1" aria-disabled="true">Ingresa tus puntos</a>
@@ -50,7 +52,7 @@
           <a class="nav-link" href="php/login.php">Log In</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="register.php" tabindex="-1" aria-disabled="true">Register</a>
+          <a class="nav-link" href="views/register.php" tabindex="-1" aria-disabled="true">Register</a>
         </li>
           <?php endif ?>
 

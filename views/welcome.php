@@ -1,8 +1,8 @@
 <?php 
-    require_once ('inicio.php');
-    require_once("php/logged.php");
+    require_once ('../inicio.php');
+    require_once("../php/logged.php");
     // require_once("php/traerPuntajes.php");
-    include_once("nav.php");
+    include_once("../nav.php");
     $resultado = Puntos::traerPuntajes();
 
 ?>
@@ -18,7 +18,7 @@
 
         </div>
         <div class="col-6">
-          <img src="./img/loyalty.svg" alt="" class="img-thumbnail">
+          <img src="../img/loyalty.svg" alt="" class="img-thumbnail">
         </div>
       </div>
     </section>
@@ -27,7 +27,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <?php include_once("footer.php"); ?>
+    <?php include_once("../footer.php"); ?>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php 
-      require_once("php/logged.php");
-      require_once('inicio.php');
-      include_once("nav.php"); 
+      require_once("../php/logged.php");
+      require_once('../inicio.php');
+      include_once("../nav.php"); 
       $resultado = Puntos::puntajeUsuarios();
       $resultado = Puntos::traerPuntajes();
 
@@ -56,7 +56,7 @@
 
   </main>
 
-  <?php include_once("footer.php"); ?>
+  <?php include_once("../footer.php"); ?>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
