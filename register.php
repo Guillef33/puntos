@@ -6,14 +6,19 @@ include_once("nav.php");
 <div class="container">
   <div class="row seccionLogin">
     <div class="d-flex align-items-center justify-content-center">
-      <form method="post" id="formLogin">
+      <form method="post" id="register">
+      <div class="form-group">
+          <label for="inputNombre">Nombre</label>
+          <input type="email" class="form-control" name="nombre" id="inputNombre" aria-describedby="nombreHelp" placeholder="Ingrese su email">
+          <small id="errorEmail" class="mb-4 text-danger"></small>        
+        </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Correo Electronico</label>
+          <label for="inputEmail">Correo Electronico</label>
           <input type="email" class="form-control" name="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Ingrese su email">
           <small id="errorEmail" class="mb-4 text-danger"></small>        
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
+          <label for="inputPassword">Password</label>
           <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Ingrese su password">
           <small id="errorPassword" class="mb-4 text-danger"></small>       
         </div>

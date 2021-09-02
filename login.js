@@ -2,9 +2,9 @@ let inputEmail = document.getElementById('inputEmail');
 let inputPassword = document.getElementById('inputPassword');
 let errorEmail = document.getElementById('errorEmail');
 let errorPassword = document.getElementById('errorPassword');
-let formLogin = document.getElementById('formLogin');
+let login = document.getElementById('login');
 
-formLogin.addEventListener('submit', e => {
+login.addEventListener('submit', e => {
     e.preventDefault();
     validar();
 })
