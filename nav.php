@@ -17,7 +17,7 @@
 
 
     <?php if (isset($_SESSION['idUsuarios'])): ?>
-      <a class="navbar-brand" href="views/welcome.php">TusPuntos</a>
+      <a class="navbar-brand" href="welcome.php">TusPuntos</a>
       <?php else: ?>
       <a class="navbar-brand" href="index.php">TusPuntos</a>
     <?php endif; ?>

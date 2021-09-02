@@ -45,12 +45,12 @@
                 <td><?= $Producto['descripcionCorta'] ?></td>
 
                 <td>
-                    <a href="formModificarDestino.php?destID=<?= $Producto['id'] ?>" class="btn btn-outline-secondary">
+                    <a href="formModificarProducto.php?destID=<?= $Producto['id'] ?>" class="btn btn-outline-secondary">
                         Modificar <i class="far fa-edit ml-1"></i>
                     </a>
                 </td>
                 <td>
-                    <a href="formEliminarDestino.php?destID=<?= $Producto['id'] ?>" class="btn btn-outline-secondary">
+                    <a href="formModificarProducto.php?destID=<?= $Producto['id'] ?>" class="btn btn-outline-secondary">
                         Eliminar <i class="far fa-minus-square ml-1"></i>
                     </a>
                 </td>
