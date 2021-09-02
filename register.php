@@ -18,7 +18,7 @@ include_once("nav.php");
           <small id="errorPassword" class="mb-4 text-danger"></small>       
         </div>
         <button type="submit" name="submit" class="btn btn-primary">Ingresar</button>
-        <a type="text" class="btn btn-primary" href="registro.php">Registrarse</a>
+        <a type="text" class="btn btn-primary" href="register.php">Registrarse</a>
       </form>
       <?php 
         if(isset($_POST["submit"])){
