@@ -22,7 +22,7 @@ include_once("nav.php");
       </form>
       <?php 
         if(isset($_POST["submit"])){
-          $a = Usuario::logIn();
+          $a = Usuario::logIn(); // Aca deberia ir register?
         }
       ?>
 
