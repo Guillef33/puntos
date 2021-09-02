@@ -44,6 +44,9 @@
           <a class="nav-link" href="points.php" tabindex="-1" aria-disabled="true">Ingresa tus puntos</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="adminProductos.php" tabindex="-1" aria-disabled="true">Admin Productos</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-danger fw-bold" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a>
         </li>
 

@@ -20,7 +20,7 @@ class Usuario extends Conexion
                 $_SESSION["idUsuarios"]= $resultado["idUsuarios"];
                 $_SESSION["nombre"] = $resultado["nombre"];
                 $_SESSION["email"] = $resultado["email"];
-                header("location:welcome.php");
+                header("location:views/welcome.php");
             }
             else{
                 header("location:login.php");
