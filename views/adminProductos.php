@@ -22,7 +22,7 @@
                 <th>Stock</th>
                 <th>Descripcion</th>
                 <th colspan="2">
-                    <a href="formAgregarDestino.php" class="btn btn-outline-secondary">
+                    <a href="formAgregarProducto.php" class="btn btn-outline-secondary">
                         Agregar <i class="far fa-plus-square ml-1"></i>
                     </a>
                 </th>
