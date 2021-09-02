@@ -88,8 +88,6 @@
                         </div>
                     </div>
 
-
-
                     <button class="btn btn-dark mr-3">Agregar producto</button>
                         <a href="adminProductos.php" class="btn btn-outline-secondary">
                             Volver a panel de productos
