@@ -77,7 +77,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-        <a type="button" class="btn btn-danger" href="php/logout.php">Cerrar</a>
+        <a type="button" class="btn btn-danger" href="php/logout.php">Cerrar</a> <!-- aca te manda a logout y no existe. Deberiamos llamar el metodo? -->
       </div>
     </div>
   </div>
