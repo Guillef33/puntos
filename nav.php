@@ -55,7 +55,13 @@
           <a class="nav-link" href="php/login.php">Log In</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-info" href="php/login_admin.php">Login Admin</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="register.php" tabindex="-1" aria-disabled="true">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-info" href="register_admin.php" tabindex="-1" aria-disabled="true">Register Admin</a>
         </li>
           <?php endif ?>
 
