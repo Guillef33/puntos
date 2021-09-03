@@ -7,7 +7,7 @@ include_once("nav.php");
   <div class="row seccionLogin">
     <div class="d-flex align-items-center justify-content-center">
       <form method="post" id="register">
-      <div class="form-group">
+        <div class="form-group">
           <label for="inputNombre">Nombre</label>
           <input type="email" class="form-control" name="nombre" id="inputNombre" aria-describedby="nombreHelp" placeholder="Ingrese su nombre">
           <small id="errorName" class="mb-4 text-danger"></small>        

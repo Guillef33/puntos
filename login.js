@@ -5,7 +5,7 @@ let errorPassword = document.getElementById('errorPassword');
 let login = document.getElementById('login');
 
 login.addEventListener('submit', e => {
-    e.preventDefault();
+    // e.preventDefault();
     validar();
 })
 
