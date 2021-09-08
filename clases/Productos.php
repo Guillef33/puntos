@@ -14,7 +14,6 @@ class Productos
 
     static function conectarTienda()
     {
-
         $conn = new PDO ("mysql:host=localhost;dbname=premios","root","");
         return $conn;
 
@@ -33,17 +32,28 @@ class Productos
     public function agregarProducto( ){
 
         $nombreProducto = $_POST['nombreProducto']; //Encapsulamos el objeto, vamos a tener que agregar varios parametros post en destinos
-        $link = Conexion::conectar();
-        $sql = "INSERT INTO premios 
-                            ( nombreProducto ) 
-                        VALUE 
-                            (:nombreProducto)"; //parametro con nombre
-        $stmt = $link->prepare($sql);              // https://www.php.net/manual/es/pdo.prepare.php    
-        $stmt->bindParam(':nombreProducto', $nombreProducto, PDO::PARAM_STR); // parametro con nombre, la variables, el parametrostr
+        $precio = $_POST['precio'];
+        $sku = $_POST['sku'];
+        $stock = $_POST['stock'];
+        $descripcion = $_POST['descripcion'];
 
-        if ( $stmt ->execute() ) {
-            $this->setID($link->lastInsertId());
+        $link = Conexion::conectar();
+        $sql = "INSERT INTO premios (nombre,precio,sku,stock,descripcionCorta,categoria) VALUES (:nombreProducto,:precio,:sku,:stock,:descripcion,'Camping')"; //parametro con nombre     
+        $stmt = $link->prepare($sql); // https://www.php.net/manual/es/pdo.prepare.php    
+        $stmt->bindParam(':nombreProducto', $nombreProducto, PDO::PARAM_STR); // parametro con nombre, la variables, el parametrostr
+        $stmt->bindParam(':precio', $precio, PDO::PARAM_INT);
+        $stmt->bindParam(':sku', $sku, PDO::PARAM_INT);
+        $stmt->bindParam(':stock', $stock, PDO::PARAM_INT);
+        $stmt->bindParam(':descripcion', $descripcion, PDO::PARAM_STR);
+
+        if ($stmt ->execute()) {
+            $this->setID($link->lastInsertId());/*lastInsertId Es un metodo de pdo para traer la llave primaria de la ultima INSERT INTO de la linea 42.*/
             $this->setNombre($nombreProducto); // registramos un atributo
+            $this->setPrecio($precio); // registramos un atributo
+            $this->setSku($sku); // registramos un atributo
+            $this->setStock($stock); // registramos un atributo
+            $this->setDescripcionCorta($descripcion); // registramos un atributo
+
             return $this; //retorna el objeto
         } 
         return false;

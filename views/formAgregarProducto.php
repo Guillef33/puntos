@@ -20,7 +20,6 @@
                             id="nombreProducto" class="form-control mb-2"
                             required>
                     </div>
-
                     <!-- <div class="form-group">
                         <select name="categoriaProducto" id="categoriaProducto" 
                                 class="form-control mb-2" required>
@@ -34,7 +33,6 @@
                 ?>
                         </select>
                     </div> -->
-
                     <div class="form-group">
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">

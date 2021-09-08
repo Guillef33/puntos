@@ -19,6 +19,7 @@
             $css = 'success';
         }
         ?>
+        
         <div class="alert alert<?= $css ?>">
             <?= $mensaje ?>
             <a href="adminProductos.php" class="btn btn-light">Volver atras</a>
