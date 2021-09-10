@@ -43,9 +43,11 @@
         <li class="nav-item">
           <a class="nav-link" href="points.php" tabindex="-1" aria-disabled="true">Ingresa tus puntos</a>
         </li>
+        <?php if (isset($_SESSION["rol"]) AND $_SESSION['rol'] == "admin"): ?>
         <li class="nav-item">
           <a class="nav-link" href="adminProductos.php" tabindex="-1" aria-disabled="true">Admin Productos</a>
         </li>
+        <?php endif; ?>
         <li class="nav-item">
           <a class="nav-link text-danger fw-bold" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a>
         </li>
@@ -54,9 +56,10 @@
         <li class="nav-item">
           <a class="nav-link" href="php/login.php">Log In</a>
         </li>
+        <!--  
         <li class="nav-item">
           <a class="nav-link text-info" href="php/login_admin.php">Login Admin</a>
-        </li>
+        </li>-->
         <li class="nav-item">
           <a class="nav-link" href="register.php" tabindex="-1" aria-disabled="true">Register</a>
         </li>
@@ -82,8 +85,13 @@
       ¿<span class="fw-bold"><?php echo $_SESSION["nombre"]; ?></span> desea cerrar sesion?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-        <a type="button" class="btn btn-danger" href="php/logout.php">Cerrar</a> <!-- aca te manda a logout y no existe. Deberiamos llamar el metodo? -->
+        <form method="post">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+          <button type="submit" name="logout" class="btn btn-danger">Cerrar</button> <!-- aca te manda a logout y no existe. Deberiamos llamar el metodo? -->
+          <?php if (isset($_POST["logout"])): 
+            $a = Usuario::logOut();
+           endif ?>
+        </form>
       </div>
     </div>
   </div>

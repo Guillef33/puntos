@@ -35,38 +35,50 @@
         }
     }
     public static function logIn()
-    {
-        $rol = $_POST["rol"];
+    {   
         $email = $_POST["email"];
         $password = $_POST["password"];
     
-        
         $sql = Conexion::conectar()->prepare("SELECT * FROM usuarios WHERE email = :email AND password = :password");
         $sql->bindParam(":email",$email,PDO::PARAM_STR);
         $sql->bindParam(":password",$password,PDO::PARAM_STR);
         
         if ($sql->execute()) {
+            /*
+            
+            Sin fetch
+            $sql = "NOMBRE:ema password:1234";
+
+            Con fetch
+            $resultado = ["nombre"=>"ema","password"=>"1234"];
+            $resultado["nombre"];
+
+            */
             $resultado = $sql->fetch();
+            /*Si es true trajo una fila y tiene un array con los datos del usuario, osea se logeo bien puso email y password correcto.*/
             if ($resultado == true) {
+                /*Para empezar a utilizar las variables de session*/
                 session_start();
+                /*Empezamos a guardar los datos del usuario logeado para poder manejarlos en la pagina , preguntar si se logeo. traer el nombre y mostrarlo en la vista, preguntar por su rol , etc.*/
                 $_SESSION["idUsuarios"]= $resultado["idUsuarios"];
                 $_SESSION["nombre"] = $resultado["nombre"];
                 $_SESSION["email"] = $resultado["email"];
+                $_SESSION["rol"] = $resultado["rol"];
                 header("location:views/welcome.php");
             }
+            /*Si pasa por false, significa que no trajo ninguna fila, los datos no coinciden.*/
             else{
                 header("location:login.php");
             }
         }
-
     }
-
     public function logOut () 
     {
         session_start();
         unset($_SESSION["idUsuarios"]);
         unset($_SESSION["nombre"]);
         unset($_SESSION["email"]);
+        unset($_SESSION["rol"]);
         header("location:../index.php");
     }
 

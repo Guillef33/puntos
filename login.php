@@ -20,7 +20,8 @@ include_once("nav.php");
         <button type="submit" name="submit" class="btn btn-primary">Login</button>
         <a type="text" class="btn btn-primary" href="login.php">Volver a Login</a>
       </form>
-      <?php 
+      <?php
+      /*if para validar si se envio el formulario, cuando se apreta en el button, el $_POST["submit"] pasara a true, entonces pasara por el if, el $_POST["submit"] es el button de la linea 20 con name="submit" */
         if(isset($_POST["submit"])){
           $a = Usuario::logIn();
         }

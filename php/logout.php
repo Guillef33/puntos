@@ -4,5 +4,4 @@
 	unset($_SESSION["nombre"]);
 	unset($_SESSION["email"]);
 	header("location:../index.php");
-	
  ?>
