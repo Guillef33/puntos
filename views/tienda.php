@@ -3,6 +3,9 @@
     require_once("../php/logged.php");  
     include_once("../nav.php"); 
     $productos = Productos::listarProductos();
+    $a = new Puntos;
+    $a->puntajeUsuarios();
+    $puntosUsuarios = $a["puntos"];
 ?>
 
   <main>
@@ -17,8 +20,16 @@
             <h5 class="card-title"><?php echo $producto["nombre"] ?></h5>
             <p class="card-text"><?php echo $producto["descripcionCorta"] ?></p>
             <p class="card-text"><?php echo $producto["sku"] ?></p>
-            <h4 class="precioPuntos"><?php echo '$' . $producto["precio"] ?></h4>
-            <a href="producto.php?productoId=<?php echo $producto["id"] ?>" class="btn btn-primary">Canjear</a>
+          <?php
+            if ($producto["precio"] <   $puntosUsuarios ): ?>
+             <h4 class="precioPuntos"><?php echo '$' . $producto["precio"] ?></h4>
+             <a href="producto.php?productoId=<?php echo $producto["id"] ?>" class="btn btn-primary">Canjear</a>
+            <?php else: ?>
+              <h4 class="precioPuntos">Puntos insuficientes</h4>
+              <a href="" class="btn btn-secondary disabled">Canjear</a>
+
+            <?php endif; ?>
+
           </div>
         </div>
       <?php endforeach ?>

@@ -1,5 +1,5 @@
 <?php
-require_once("conexion.php");
+/*require_once("conexion.php");
 $email = $_POST["email"];
 $password = $_POST["password"];
 
@@ -22,6 +22,6 @@ if ($sql->execute()) {
 		header("location:../login.php");
 
 	}
-}
+}*/
 
 ?>

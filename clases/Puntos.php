@@ -1,7 +1,5 @@
 <?php
-
 class Puntos extends Conexion
-
 {
     public static function traerPuntajes () {
         //$conn = new PDO ("mysql:host=localhost;dbname=puntos","root","");
@@ -61,6 +59,17 @@ class Puntos extends Conexion
         $sentencia->bindParam(":idUsuarios",$_SESSION['idUsuarios'],PDO::PARAM_INT);
         $sentencia->execute();
         $puntajeUsuarios = $sentencia->fetchAll();
+    
+        }
+
+    // Probando
+    public static function restarPuntosAUsuario () {
+
+        $sentencia = Conexion::conectar()->prepare("UPDATE puntos SET  puntos = puntos - :valorProducto WHERE idUsuarios = :idUsuarios" );
+        $sentencia->bindParam(":idUsuarios",$array['idUsuarios'],PDO::PARAM_INT);
+        $sentencia->bindParam(":valorProducto",$array['valorProducto'],PDO::PARAM_INT);
+
+        $sentencia->execute();
     
         }
 

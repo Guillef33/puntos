@@ -35,7 +35,7 @@
         }
     }
     public static function logIn()
-    {   
+    {ob_start();
         $email = $_POST["email"];
         $password = $_POST["password"];
     
@@ -57,6 +57,7 @@
             $resultado = $sql->fetch();
             /*Si es true trajo una fila y tiene un array con los datos del usuario, osea se logeo bien puso email y password correcto.*/
             if ($resultado == true) {
+                
                 /*Para empezar a utilizar las variables de session*/
                 session_start();
                 /*Empezamos a guardar los datos del usuario logeado para poder manejarlos en la pagina , preguntar si se logeo. traer el nombre y mostrarlo en la vista, preguntar por su rol , etc.*/
@@ -65,13 +66,14 @@
                 $_SESSION["email"] = $resultado["email"];
                 $_SESSION["rol"] = $resultado["rol"];
                 header("location:views/welcome.php");
+                
             }
             /*Si pasa por false, significa que no trajo ninguna fila, los datos no coinciden.*/
             else{
                 header("location:login.php");
             }
         }
-    }
+    ob_end_flush();}
     public function logOut () 
     {
         session_start();

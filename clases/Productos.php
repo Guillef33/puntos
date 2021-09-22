@@ -60,6 +60,11 @@ class Productos
 
  
     }
+    public function comprarProducto(){
+        $_POST["idProducto"];
+        $_POST["valorProducto"];
+        $_SESSION["idUsuarios"];
+    }
 
     /**
      * Get the value of id
