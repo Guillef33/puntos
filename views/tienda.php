@@ -21,15 +21,26 @@
             <p class="card-text"><?php echo $producto["descripcionCorta"] ?></p>
             <p class="card-text"><?php echo $producto["sku"] ?></p>
           <?php
-            if ($producto["precio"] <   $puntosUsuarios ): ?>
+            if ($producto["precio"] <  $puntosUsuarios ): ?>
              <h4 class="precioPuntos"><?php echo '$' . $producto["precio"] ?></h4>
-             <a href="producto.php?productoId=<?php echo $producto["id"] ?>" class="btn btn-primary">Canjear</a>
+             <form action="" method="POST">
+              <input type='hidden' name="idProducto" value="<?= $producto["idProducto"] ?>">
+              <input type='hidden' name="precio" value="<?= $producto["precio"] ?>">
+              <button type="submit" class="btn btn-primary" name="comprado">Canjear</button>
+             </form>
+
+             <?php 
+              if(isset($_POST["comprado"])){
+             $comprado = new Productos;
+             $comprado->comprarProducto();
+              }
+             ?>
+
+             <!-- aHORA para que se envie el formulario , debemos utilizar las clases , crear una clase que reciba los datos del formulario, y del usuario , actualizar el puntaje y guardar el historial. -->
             <?php else: ?>
               <h4 class="precioPuntos">Puntos insuficientes</h4>
               <a href="" class="btn btn-secondary disabled">Canjear</a>
-
             <?php endif; ?>
-
           </div>
         </div>
       <?php endforeach ?>

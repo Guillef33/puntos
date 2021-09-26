@@ -29,6 +29,7 @@ class Productos
         return $productos;
     }
 
+
     public function agregarProducto( ){
 
         $nombreProducto = $_POST['nombreProducto']; //Encapsulamos el objeto, vamos a tener que agregar varios parametros post en destinos

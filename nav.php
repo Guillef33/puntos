@@ -22,9 +22,7 @@
       <a class="navbar-brand" href="index.php">TusPuntos</a>
     <?php endif; ?>
 
-    <?php // require_once("php/traerPuntajesUsuarios.php"); ?>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +52,7 @@
 
         <?php else:?>
         <li class="nav-item">
-          <a class="nav-link" href="php/login.php">Log In</a>
+          <a class="nav-link" href="login.php">Log In</a>
         </li>
         <!--  
         <li class="nav-item">

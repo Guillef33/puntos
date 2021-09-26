@@ -28,3 +28,13 @@ function validar() {
     //enviamos el formulario
     return true;
 }
+
+
+function scopeExample() {
+    /TDZ age, TDZ hands
+    let age; // 1
+    age = 20; // 2 3 Finaliza TDZ, finaliza cuando se inicializa.
+    let hands = 2; // 3 Finaliza TDZ
+}
+
+// Motor de JS / https://www.youtube.com/results?search_query=motor+de+js

@@ -1,12 +1,12 @@
-<?php class Usuario extends Conexion
+<?php 
+
+class Usuario
 {
     public static function register(){
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
         $password = $_POST["password"];
         $rol = $_POST["rol"];
-
-
         $error = "";
 
         if(strlen($nombre) < 5 OR strlen($nombre) > 20){
@@ -64,13 +64,13 @@
                 $_SESSION["idUsuarios"]= $resultado["idUsuarios"];
                 $_SESSION["nombre"] = $resultado["nombre"];
                 $_SESSION["email"] = $resultado["email"];
-                $_SESSION["rol"] = $resultado["rol"];
+                // $_SESSION["rol"] = $resultado["rol"];
                 header("location:views/welcome.php");
                 
             }
             /*Si pasa por false, significa que no trajo ninguna fila, los datos no coinciden.*/
             else{
-                header("location:login.php");
+         //       header("location:login.php");
             }
         }
     ob_end_flush();}
